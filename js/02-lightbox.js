@@ -18,4 +18,8 @@ function createGalleryList(items) {
     .join("");
 }
 
-const lightbox = new SimpleLightbox(".gallery a", { captionsData: "alt" });
+new SimpleLightbox(
+  ".gallery a",
+  { captionsData: "alt" },
+  { captionDelay: 250 }
+);

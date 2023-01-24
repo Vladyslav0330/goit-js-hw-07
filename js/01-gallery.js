@@ -41,5 +41,10 @@ function onGalleryContainerClick(evt) {
     `<img src="${bigPictureSrc}" width="800" height="600">`
   );
   instance.show();
-}
 
+  galleryContainer.addEventListener("keydown", (event) => {
+    if (event.code === "Escape") {
+      instance.close();
+    }
+  });
+}
